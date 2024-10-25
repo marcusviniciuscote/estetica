@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estetica</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+    <header>
+        <button id="openMenu">&#9776;</button>
+        <nav id="menu">
+            <button id="closeMenu">X</button>
+            <a href="#" onclick="fechar()">Dashboard</a>
+            <a href="#" onclick="fechar()">Clients</a>
+            <a href="#" onclick="fechar()" id="logout">Login/logout</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Teste</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, doloribus cumque. Consectetur dolorem odio exercitationem veniam qui. Autem, animi? Delectus, sed repellendus quod doloremque tenetur optio vel nihil animi ducimus?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore ipsam, repellat laborum maiores eligendi alias, labore aliquam officia sunt dolor, mollitia odio voluptatum autem? Voluptatum magni optio nihil molestias corporis.</p>
+        <p>Obcaecati eveniet aut recusandae est, eligendi accusamus quidem dolorem cumque! Quod nesciunt vel omnis commodi autem deserunt voluptate, modi facilis consequatur debitis necessitatibus hic eum delectus veritatis, molestiae provident rerum.</p>
+        <p>Possimus sequi dolore quia, eligendi nobis, nam iure molestiae veritatis et consectetur commodi? Quaerat voluptates nobis, quo quia necessitatibus harum ut officia nulla repudiandae laudantium odit veritatis rem, hic voluptate.</p>
+        <p>Aut ex sit magni? Sint esse magni adipisci nam magnam! Nesciunt eligendi quidem beatae blanditiis placeat perspiciatis tenetur minima velit, cum atque laborum quisquam illo nobis. Incidunt unde alias doloremque?</p>
+        <p>Animi, eveniet? Laudantium nihil repudiandae similique, fuga, rerum accusamus inventore necessitatibus officiis doloribus, quia tempore assumenda vero in? Animi culpa, eligendi aut voluptate sunt suscipit voluptatum iusto nisi obcaecati quo!</p>
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+    <aside></aside>
+
+    <footer>Developed by Marcus Vinicius</footer>
+
+    <script src="../static/js/my.js"></script>
+</body>
+
+</html>

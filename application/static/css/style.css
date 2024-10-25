@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    /* libre-baskerville-regular */
+    --normal-font-family: "Libre Baskerville", serif;
+    --normal-font-weight: 400;
+    --normal-font-style: normal;
+
+    /* libre-baskerville-bold */
+    --bold-font-family: "Libre Baskerville", serif;
+    --bold-font-weight: 700;
+    --bold-font-style: normal;
+
+    /* libre-baskerville-regular-italic */
+    --italic-font-family: "Libre Baskerville", serif;
+    --italic-font-weight: 400;
+    --italic-font-style: italic;
+
+    /* Colors */
+    --white: #f9f9f9;
+    --tranparent-white: #f9f9f9b4;
+    --black: #111;
+    --light-gray: #cccccc;
+    --dark-gray: #333;
+    --gray: #666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: var(--black);
+    scroll-behavior: smooth;
+    font-family: var(--normal-font-family);
+    font-weight: var(--normal-font-weight);
+    font-style: var(--normal-font-style);
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3px;
+    flex: 1 1 100vw;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+    display: flex;
+    margin: 3px;
+    color: var(--light-gray);
+}
+
+#openMenu,
+#closeMenu {
+    border: none;
+    background: none;
+    color: var(--darkGray);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1 1 100vw;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: var(--dark-gray);
+}
+
+nav a {
+    padding: 5px 20px 5px 20px;
+    font-size: 14pt;
+    text-decoration: none;
+    transition: 1s;
+    color: inherit;
+    background: var(--dark-gray);
+    text-decoration: none;
+    text-decoration-color: var(--dark-gray);
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+    transition: 1s;
+}
+
+.active {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+}
+
+main {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    flex: 20 1 500px;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+aside {
+    margin-left: 150px;
+    margin-right: 50px;
+    flex: 1 1 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 0;
+}
+
+footer {
+    flex: 1 1 100vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
